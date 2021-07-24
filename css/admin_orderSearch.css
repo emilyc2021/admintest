@@ -163,6 +163,10 @@ section{
     border: 1px solid black;
 }
 /* 查詢結果 */
+.selectcolor{
+    list-style: none;
+    background-color:#f5f1f1;
+}
 #viewNum{
     display: inline;
 }
