@@ -129,20 +129,19 @@ section{
 .cart>li>a.active{
 	background-color:#F3AD34;
     border-radius: 35px;
-    font-weight: bold;
 	color: #3B3B3B;
 }
 
-.cart ul{
-    /* TODO:JS按鈕點選單 */
-	/* display: none; */
+.cart ul a{
     padding-left: 0px;
     background-color: #fff;
+    color: #DB7243;
 }
 .cart ul a:hover{
     padding-left: 0px;
     background-color: #F3AD34;
-    color: #fff;
+    color: #FFFFFF;
+    /* font-weight: normal; */
 }
 
 /*以上為sideBar*/
