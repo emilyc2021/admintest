@@ -74,7 +74,7 @@
                 <div class="col-lg-2 aside">
                     <ul class="cart">
                         <li>
-                            <a href="#">查詢註冊表單</a>
+                            <a href="./admin_registerSearch.html">查詢註冊表單</a>
                         </li>
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#collapseChat">會員申訴聊天室</a>
@@ -87,9 +87,9 @@
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#collapseSearch">資料調閱</a>
                             <ul class="collapse" id="collapseSearch">
-                                <li><a href="#">會員查詢</a></li>
-                                <li><a href="#">訂單查詢</a></li>
-                                <li><a href="#">報表查詢</a></li>
+                                <li><a href="./admin_memberSearch.html">會員查詢</a></li>
+                                <li><a href="./admin_orderSearch.html">訂單查詢</a></li>
+                                <li><a href="./admin_reportSearch.html">報表查詢</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -102,10 +102,25 @@
                     <h2 class="mb-3">會員名稱：<span>XXX</span></h2>
                     <h2 class="mb-3">報表區間：<span>2021/01~2021/07</span></h2>
                     <h2 class="mb-3">營收金額：$<span>59</span>(萬)元</h2>
-                    <div>
-                        <canvas id="myChart"></canvas>
+                    <!-- 頁籤 -->
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-chart1"
+                                role="tab" aria-controls="nav-home" aria-selected="true">月營收狀況</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-chart2"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">熱門餐點TOP5</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active m-auto" id="nav-chart1" role="tabpanel"
+                            aria-labelledby="nav-home-tab"><canvas id="myChart1"></canvas></div>
+                        <div class="tab-pane fade m-auto" id="nav-chart2" role="tabpanel"
+                            aria-labelledby="nav-profile-tab" style="position: relative;width:60%">
+                            <canvas id="myChart2"></canvas>
+                        </div>
                     </div>
-                    <h2 class="mt-5 mb-3 text-center">月營收狀況折線圖</h2>
+                    <div>
+                    </div>
                 </div>
             </div>
         </section>
